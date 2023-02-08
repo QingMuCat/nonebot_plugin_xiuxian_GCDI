@@ -27,10 +27,7 @@ _:tada::tada::tada:群与频道数据互通:tada::tada::tada:_<br>
 ```
 git clone https://github.com/QingMuCat/nonebot_plugin_xiuxian_GCDI
 ```
-镜像：https://ghproxy.com/
-```
-git clone https://ghproxy.com/https://github.com/QingMuCat/nonebot_plugin_xiuxian_GCDI
-```
+
 
 2、安装依赖：
 
