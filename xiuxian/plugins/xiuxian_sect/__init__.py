@@ -1,4 +1,4 @@
-from ..xiuxian2_handle import XiuxianDateManage
+from ...xiuxian2_handle import XiuxianDateManage
 from nonebot import get_bot, on_command, on_regex, require
 from nonebot.log import logger
 from nonebot.adapters.onebot.v11 import (
@@ -11,16 +11,16 @@ from nonebot.adapters.onebot.v11 import (
     MessageSegment,
 )
 from nonebot.params import CommandArg, RegexGroup
-from ..data_source import jsondata
-from ..xiuxian_config import XiuConfig, USERRANK
-from ..utils import Txt2Img
+from ...data_source import jsondata
+from ...xiuxian_config import XiuConfig, USERRANK
+from ...utils import Txt2Img
 import re
 from .sectconfig import get_config
 import random
-from ..cd_manager import add_cd, check_cd, cd_msg
-from ..utils import check_user,send_forward_msg, data_check_conf, get_msg_pic
-from ..read_buff import BuffJsonDate, get_main_info_msg, UserBuffDate, get_sec_msg
-from ..item_json import Items
+from ...cd_manager import add_cd, check_cd, cd_msg
+from ...utils import check_user,send_forward_msg, data_check_conf, get_msg_pic
+from ...read_buff import BuffJsonDate, get_main_info_msg, UserBuffDate, get_sec_msg
+from ...item_json import Items
 from nonebot_plugin_guild_patch import (
     GUILD,
     GUILD_OWNER,

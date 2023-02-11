@@ -18,16 +18,16 @@ from nonebot_plugin_guild_patch import (
     GuildMessageEvent
 )
 from nonebot.permission import SUPERUSER
-from ..xiuxian2_handle import XiuxianDateManage
+from ...xiuxian2_handle import XiuxianDateManage
 from datetime import datetime
-from ..xiuxian_opertion import do_is_work
-from ..cd_manager import add_cd, check_cd, cd_msg
+from ...xiuxian_opertion import do_is_work
+from ...cd_manager import add_cd, check_cd, cd_msg
 from nonebot.log import logger
-from ..utils import data_check_conf, check_user, send_forward_msg, get_msg_pic
-from ..item_json import Items
+from ...utils import data_check_conf, check_user, send_forward_msg, get_msg_pic
+from ...item_json import Items
 from .mixelixirutil import get_mix_elixir_msg, tiaohe, check_mix,make_dict
-from ..read_buff import get_player_info, save_player_info
-from ..xiuxian_config import USERRANK, XiuConfig
+from ...read_buff import get_player_info, save_player_info
+from ...xiuxian_config import USERRANK, XiuConfig
 from datetime import datetime
 import random
 import re

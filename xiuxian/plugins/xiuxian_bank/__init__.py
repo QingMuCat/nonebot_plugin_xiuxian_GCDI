@@ -11,11 +11,11 @@ from nonebot.adapters.onebot.v11 import (
 import json
 import os
 import re
-from ..xiuxian2_handle import XiuxianDateManage
+from ...xiuxian2_handle import XiuxianDateManage
 from datetime import datetime
 from .bankconfig import get_config
-from ..utils import data_check_conf, get_msg_pic
-from ..xiuxian_config import XiuConfig
+from ...utils import data_check_conf, get_msg_pic
+from ...xiuxian_config import XiuConfig
 from nonebot_plugin_guild_patch import (
     GUILD,
     GUILD_OWNER,

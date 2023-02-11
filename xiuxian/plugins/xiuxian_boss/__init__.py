@@ -16,14 +16,14 @@ from nonebot.adapters.onebot.v11 import (
 )
 from nonebot.permission import SUPERUSER
 from nonebot.log import logger
-from ..xiuxian2_handle import XiuxianDateManage
-from ..xiuxian_config import USERRANK, XiuConfig
+from ...xiuxian2_handle import XiuxianDateManage
+from ...xiuxian_config import USERRANK, XiuConfig
 from .makeboss import createboss
 from .bossconfig import get_config, savef
-from ..player_fight import Boss_fight
-from ..item_json import Items
-from ..utils import check_user_type, data_check_conf, send_forward_msg_list, check_user, send_forward_msg, get_msg_pic
-from ..read_buff import UserBuffDate
+from ...player_fight import Boss_fight
+from ...item_json import Items
+from ...utils import check_user_type, data_check_conf, send_forward_msg_list, check_user, send_forward_msg, get_msg_pic
+from ...read_buff import UserBuffDate
 from pathlib import Path
 import json
 import os

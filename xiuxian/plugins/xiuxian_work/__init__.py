@@ -17,18 +17,18 @@ from nonebot.adapters.onebot.v11 import (
     MessageSegment,
     Message
 )
-from ..xiuxian2_handle import XiuxianDateManage
+from ...xiuxian2_handle import XiuxianDateManage
 from .work_handle import workhandle
 from datetime import datetime
-from ..xiuxian_opertion import do_is_work
-from ..cd_manager import add_cd, check_cd, cd_msg
-from ..utils import data_check_conf, check_user, send_forward_msg, check_user_type, send_forward_msg_list, get_msg_pic
+from ...xiuxian_opertion import do_is_work
+from ...cd_manager import add_cd, check_cd, cd_msg
+from ...utils import data_check_conf, check_user, send_forward_msg, check_user_type, send_forward_msg_list, get_msg_pic
 from nonebot.log import logger
 from .reward_data_source import PLAYERSDATA
 import os
 import re
-from ..item_json import Items
-from ..xiuxian_config import USERRANK, XiuConfig
+from ...item_json import Items
+from ...xiuxian_config import USERRANK, XiuConfig
 
 # 定时任务
 resetrefreshnum = require("nonebot_plugin_apscheduler").scheduler

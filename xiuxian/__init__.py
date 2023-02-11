@@ -35,8 +35,6 @@ from .xiuxian_opertion import do_is_work
 from .read_buff import UserBuffDate
 from .utils import Txt2Img, data_check_conf, check_user_type, get_msg_pic, check_user
 from .item_json import Items
-from .config import config as _config
-from pkgutil import iter_modules
 
 # 定时任务
 scheduler = require("nonebot_plugin_apscheduler").scheduler
@@ -48,12 +46,12 @@ sect_out_check = {}  # 退出宗门或踢出宗门信息记录
 sql_message = XiuxianDateManage()  # sql类
 
 
-dir_ = Path(__file__).parent
+
 require('nonebot_plugin_apscheduler')
 
-load_plugins(str(dir_ / "xiuxian"))
 
 logger.info("修仙插件正在加载...")
+load_plugins("xiuxian/plugins")
 logo ="""<g>   
    _  __ _      _  __ _             ________________  ____
   | |/ /(_)_  _| |/ /(_)___ _____  / ____/ ____/ __ \/  _/
@@ -63,20 +61,7 @@ logo ="""<g>
                                                                                                             
                                                                                                             </g>"""
 logger.opt(colors=True).info(logo)
-if get_plugin_by_module_name("xiuxian"):
-    logger.info("推荐直接加载xiuxian 仓库文件夹")
-    load_all_plugins(
-        [
-            f"xiuxian.{module.name}"
-            for module in iter_modules([str(Path(__file__).parent)])
-            if module.ispkg
-            and (
-                (name := module.name[11:]) == "meta"
-                or name not in _config.disabled_plugins
-            )
-        ],
-        [],
-    )
+
 
 @command.qq_binding.handle()
 async def _(bot: Bot, event: GuildMessageEvent, args: Message = CommandArg()) -> None:

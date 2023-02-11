@@ -21,11 +21,11 @@ from nonebot_plugin_guild_patch import (
     GuildMessageEvent
 )
 
-from ..utils import data_check_conf, get_msg_pic, check_user
-from ..command import choujiang
-from ..item_json import Items
-from ..xiuxian_config import XiuConfig
-from ..xiuxian2_handle import XiuxianDateManage
+from ...utils import data_check_conf, get_msg_pic, check_user
+from ...command import choujiang
+from ...item_json import Items
+from ...xiuxian_config import XiuConfig
+from ...xiuxian2_handle import XiuxianDateManage
 
 
 items = Items()

@@ -19,14 +19,14 @@ from nonebot_plugin_guild_patch import (
 )
 from nonebot.permission import SUPERUSER
 from nonebot.log import logger
-from ..xiuxian2_handle import XiuxianDateManage
-from ..utils import data_check_conf, check_user, send_forward_msg, check_user_type, send_forward_msg_list, get_msg_pic
+from ...xiuxian2_handle import XiuxianDateManage
+from ...utils import data_check_conf, check_user, send_forward_msg, check_user_type, send_forward_msg_list, get_msg_pic
 from .riftconfig import get_config, savef
 from .jsondata import save_rift_data, read_rift_data
 from .riftmake import Rift, get_rift_type, get_story_type, NONEMSG, get_battle_type, get_dxsj_info, get_boss_battle_info, get_treasure_info
 import random
 from datetime import datetime
-from ..xiuxian_config import XiuConfig
+from ...xiuxian_config import XiuConfig
 import re
 
 config = get_config()

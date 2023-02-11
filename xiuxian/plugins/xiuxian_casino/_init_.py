@@ -23,11 +23,11 @@ from nonebot_plugin_guild_patch import (
     GuildMessageEvent
 )
 
-from ..utils import data_check_conf, get_msg_pic
-from ..command import dufang
-from ..cd_manager import add_cd, check_cd, cd_msg
-from ..xiuxian_config import XiuConfig, JsonConfig
-from ..xiuxian2_handle import XiuxianDateManage
+from ...utils import data_check_conf, get_msg_pic
+from ...command import dufang
+from ...cd_manager import add_cd, check_cd, cd_msg
+from ...xiuxian_config import XiuConfig, JsonConfig
+from ...xiuxian2_handle import XiuxianDateManage
 
 
 sql_message = XiuxianDateManage()  # sql类

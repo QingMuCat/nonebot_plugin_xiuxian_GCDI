@@ -1,8 +1,8 @@
 from .reward_data_source import *
 import random
-from ..item_json import Items
-from ..xiuxian_config import USERRANK
-from ..xiuxian2_handle import OtherSet
+from ...item_json import Items
+from ...xiuxian_config import USERRANK
+from ...xiuxian2_handle import OtherSet
 
 def workmake(work_level, exp, user_level):
     if work_level == '江湖好手':

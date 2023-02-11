@@ -1,12 +1,12 @@
-from ..item_json import Items
-from ..xiuxian2_handle import XiuxianDateManage
-from ..read_buff import UserBuffDate, get_weapon_info_msg, get_armor_info_msg, get_sec_msg, get_main_info_msg
+from ...item_json import Items
+from ...xiuxian2_handle import XiuxianDateManage
+from ...read_buff import UserBuffDate, get_weapon_info_msg, get_armor_info_msg, get_sec_msg, get_main_info_msg
 from datetime import datetime
 import json
 import os
 from pathlib import Path
-from ..xiuxian_config import USERRANK
-from ..read_buff import get_player_info, save_player_info
+from ...xiuxian_config import USERRANK
+from ...read_buff import get_player_info, save_player_info
 
 items = Items()
 sql_message = XiuxianDateManage()

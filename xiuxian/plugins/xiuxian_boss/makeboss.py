@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 import random
-from ..xiuxian2_handle import XiuxianDateManage
+from ...xiuxian2_handle import XiuxianDateManage
 from .bossconfig import get_config
 
 config = get_config()

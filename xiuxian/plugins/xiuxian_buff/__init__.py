@@ -17,17 +17,17 @@ from nonebot_plugin_guild_patch import (
 import re
 from datetime import datetime
 from nonebot import get_bot, on_command, on_regex, require
-from ..xiuxian2_handle import XiuxianDateManage, XiuxianJsonDate, OtherSet
-from ..xiuxian_config import XiuConfig, JsonConfig
-from ..utils import check_user
-from ..data_source import jsondata
-from ..read_buff import UserBuffDate, get_main_info_msg, get_user_buff, get_sec_msg
+from ...xiuxian2_handle import XiuxianDateManage, XiuxianJsonDate, OtherSet
+from ...xiuxian_config import XiuConfig, JsonConfig
+from ...utils import check_user
+from ...data_source import jsondata
+from ...read_buff import UserBuffDate, get_main_info_msg, get_user_buff, get_sec_msg
 from nonebot.permission import SUPERUSER
 from nonebot.params import CommandArg, RegexGroup
-from ..player_fight import Player_fight
-from ..utils import send_forward_msg_list, data_check_conf, check_user_type, get_msg_pic
-from ..cd_manager import add_cd, check_cd, cd_msg
-from ..read_buff import get_player_info, save_player_info
+from ...player_fight import Player_fight
+from ...utils import send_forward_msg_list, data_check_conf, check_user_type, get_msg_pic
+from ...cd_manager import add_cd, check_cd, cd_msg
+from ...read_buff import get_player_info, save_player_info
 
 buffinfo = on_command("我的功法", priority=5)
 out_closing = on_command("出关", aliases={"灵石出关"}, priority=5)

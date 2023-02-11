@@ -1,5 +1,5 @@
 from random import shuffle
-from ..item_json import Items
+from ...item_json import Items
 import json
 import os
 from pathlib import Path

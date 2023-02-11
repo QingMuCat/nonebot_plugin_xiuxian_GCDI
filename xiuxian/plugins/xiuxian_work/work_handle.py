@@ -1,9 +1,9 @@
 import random
-from ..xiuxian2_handle import *
+from ...xiuxian2_handle import *
 from .reward_data_source import *
 import json
 from .workmake import *
-from ..item_json import Items
+from ...item_json import Items
 
 class workhandle(XiuxianJsonDate):
     

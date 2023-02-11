@@ -1,12 +1,12 @@
 import random
 from .riftconfig import get_config
-from ..xiuxian2_handle import OtherSet
+from ...xiuxian2_handle import OtherSet
 from .jsondata import read_f
-from ..read_buff import UserBuffDate, get_main_info_msg, get_sec_msg
-from ..xiuxian2_handle import XiuxianDateManage
-from ..player_fight import Boss_fight
-from ..item_json import Items
-from ..xiuxian_config import USERRANK
+from ...read_buff import UserBuffDate, get_main_info_msg, get_sec_msg
+from ...xiuxian2_handle import XiuxianDateManage
+from ...player_fight import Boss_fight
+from ...item_json import Items
+from ...xiuxian_config import USERRANK
 
 sql_message = XiuxianDateManage()
 items = Items()
