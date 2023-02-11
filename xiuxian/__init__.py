@@ -51,7 +51,7 @@ sql_message = XiuxianDateManage()  # sql类
 dir_ = Path(__file__).parent
 require('nonebot_plugin_apscheduler')
 
-load_plugins(str(dir_ / "nonebot_plugin_xiuxian_GCDI"))
+load_plugins(str(dir_ / "xiuxian"))
 
 logger.info("修仙插件正在加载...")
 logo ="""<g>   
@@ -63,11 +63,11 @@ logo ="""<g>
                                                                                                             
                                                                                                             </g>"""
 logger.opt(colors=True).info(logo)
-if get_plugin_by_module_name("nonebot_plugin_xiuxian_GCDI"):
-    logger.info("推荐直接加载 nonebot_plugin_xiuxian_GCDI 仓库文件夹")
+if get_plugin_by_module_name("xiuxian"):
+    logger.info("推荐直接加载xiuxian 仓库文件夹")
     load_all_plugins(
         [
-            f"nonebot_plugin_xiuxian_GCDI.{module.name}"
+            f"xiuxian.{module.name}"
             for module in iter_modules([str(Path(__file__).parent)])
             if module.ispkg
             and (
